@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-12T18:39:40 IST" name="Default suite" finished-at="2023-01-12T18:41:45 IST" duration-ms="124991">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@2a265ea9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-12T18:39:40 IST" name="Default test" finished-at="2023-01-12T18:41:45 IST" duration-ms="124991">
+      <class name="cucumberOptions.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@2a265ea9]" started-at="2023-01-12T18:39:40 IST" name="setUpClass" finished-at="2023-01-12T18:40:06 IST" duration-ms="25250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5c5c784c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@2a265ea9]" started-at="2023-01-12T18:40:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-12T18:40:21 IST" duration-ms="15654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to login to the SCP QA site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Log in to SCP QA homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@2a265ea9]" started-at="2023-01-12T18:40:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-12T18:41:44 IST" duration-ms="83195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that the plant and material details are displayed for respective month"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Log in to SCP QA homepage"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Some material are not available in the screen please check the data expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Some material are not available in the screen please check the data expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at Pages.Vendor_Home_page.part_value(Vendor_Home_page.java:137)
+at stepDefinitions.Data_Validation_Steps.verify_the_partcode_details(Data_Validation_Steps.java:29)
+at ✽.Verify the partcode details(file:///C:/Users/FQ495BQ/OneDrive%20-%20EY/Documents/Automation%20docs/Working%20project/SCP_QA/src/test/java/features/Login_To_SCP.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@2a265ea9]" started-at="2023-01-12T18:41:44 IST" name="tearDownClass" finished-at="2023-01-12T18:41:45 IST" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

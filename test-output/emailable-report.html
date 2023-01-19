@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">124,991</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumberOptions.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1673529021721</td><td rowspan="1">83195</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">cucumberOptions.TestNGTestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1673529006060</td><td rowspan="1">15654</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">cucumberOptions.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify that the plant and material details are displayed for respective month&quot;</td><td>&quot;Log in to SCP QA homepage&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError:  Some material are not available in the screen please check the data expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at Pages.Vendor_Home_page.part_value(Vendor_Home_page.java:137)
+	at stepDefinitions.Data_Validation_Steps.verify_the_partcode_details(Data_Validation_Steps.java:29)
+	at ✽.Verify the partcode details(file:///C:/Users/FQ495BQ/OneDrive%20-%20EY/Documents/Automation%20docs/Working%20project/SCP_QA/src/test/java/features/Login_To_SCP.feature:14)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cucumberOptions.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to login to the SCP QA site&quot;</td><td>&quot;Log in to SCP QA homepage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
